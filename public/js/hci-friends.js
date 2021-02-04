@@ -50,9 +50,3 @@ function anagrammedName(name) {
 		return name;
 	}
 }
-
-// function projectClick(e) {
-// 	e.preventDefault();
-// 	var containingProject = $(this).closest(".friend-name")
-// 	var currentName = $(this).closest(".friend-name").text()
-// }
