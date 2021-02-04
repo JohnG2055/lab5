@@ -10,6 +10,12 @@ $(document).ready(function() {
  */
 function initializePage() {
 	console.log("Javascript connected!");
+
+	$(".friend-name h3").click(function(e) {
+		e.preventDefault();
+		var newName = $(this).closest(".friend-name h3").text();
+		$(this).text(anagrammedName(newName));
+	});
 }
 
 function anagrammedName(name) {
@@ -44,3 +50,9 @@ function anagrammedName(name) {
 		return name;
 	}
 }
+
+// function projectClick(e) {
+// 	e.preventDefault();
+// 	var containingProject = $(this).closest(".friend-name")
+// 	var currentName = $(this).closest(".friend-name").text()
+// }
